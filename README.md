@@ -1,6 +1,6 @@
 # rordi/docker-mailcatcher
 
-A lightweight Docker image with [mailcatcher](https://mailcatcher.me/) (just 64 MB compressed / 187 MB uncompressed).
+A lightweight Docker image with [mailcatcher](https://mailcatcher.me/). The smallest mailcatcher Docker image to date with just 12 MB compressed / 32 MB uncompressed.
 
 You can pull the image from the [Docker registry](https://hub.docker.com/r/rordi/docker-mailcatcher/) and run with:
 

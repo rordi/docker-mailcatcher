@@ -1,8 +1,5 @@
 FROM alpine:latest
-
 MAINTAINER Dietrich Rordorf <dr@ediqo.com>
-
-USER root
 
 # set exit on error flag, install ruby deps, build mailcatcher, remove buold deps
 RUN set -e && \
@@ -13,8 +10,7 @@ RUN set -e && \
     rm -rf /tmp/* /var/tmp/*
 
 # expose ports
-EXPOSE 1025
-EXPOSE 1080
+EXPOSE 1025 1080
 
 # entrypoint: run mailcatcher process
 CMD ["mailcatcher", "-f", "--ip=0.0.0.0"]

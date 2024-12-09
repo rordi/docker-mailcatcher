@@ -7,7 +7,7 @@ A lightweight Docker image with [mailcatcher](https://mailcatcher.me/). The smal
 
 You can pull the image from the [Docker registry](https://hub.docker.com/r/rordi/docker-mailcatcher/) and run with:
 
-    docker run -d -p 1080:1080 --name mailcatcher rordi/docker-mailcatcher 
+    docker run -d -p 1080:1080 -p 1025:1025 --name mailcatcher rordi/docker-mailcatcher 
 
 To install the image into your network with docker-compose, simply add the following lines to your docker-compose.yml and adjust the network id:
 
@@ -16,6 +16,7 @@ To install the image into your network with docker-compose, simply add the follo
       container_name: mailcatcher
       ports:
         - 1080:1080
+        - 1025:1025
       networks:
        - yournetworkid
 
